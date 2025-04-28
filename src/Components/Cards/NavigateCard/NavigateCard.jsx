@@ -1,8 +1,7 @@
-import './NavigateCard.css'
+import "./NavigateCard.css";
 import { FiArrowRight } from "react-icons/fi";
 
-
-export default function NavigateCard({title, text}) {
+export default function NavigateCard({ title, text }) {
   return (
     <div className="NavigateCard Flex SharedBorder SharedShadow">
       <div className="NavCardContent Flex">

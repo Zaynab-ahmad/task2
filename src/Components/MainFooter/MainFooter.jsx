@@ -4,6 +4,7 @@ import { FaPhone } from "react-icons/fa6";
 import { IoLocationSharp } from "react-icons/io5";
 import ContactIconBox from "../ContactIconBox/ContactIconBox";
 
+
 const linksData = [
   {
     title: "Home",
@@ -40,7 +41,7 @@ export default function MainFooter() {
     <div className="MainFooter">
       <div className="FirstColumn">
         <div className="LogoSec Flex">
-          <img src="Icons/Logo.png" alt="" className="Logo" />
+          <img src="Icons/Logo.svg" alt="" className="Logo" />
           <p className="SharedFont">
             We believe in the power of play to foster creativity,
             problem-solving skills, and imagination.

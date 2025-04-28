@@ -1,59 +1,59 @@
 .MainFooter {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    border-bottom: 1px solid var(--primary-color-gray15);
-    padding-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  border-bottom: 1px solid var(--primary-color-gray15);
+  padding-bottom: 50px;
 }
 
 .FirstColumn {
-    flex: 2;
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
 
 .Column {
-    flex: 1;
-    gap: 10px;
+  flex: 1;
+  gap: 10px;
 }
 
 .ContactBoxC {
-    align-items: center;
-    gap: 10px;
+  align-items: center;
+  gap: 10px;
 }
 
 .Contactgroup {
-    gap: 24px;
+  gap: 24px;
 }
 
 .LogoSec {
-    gap: 20px;
+  gap: 20px;
 }
 
 @media (max-width: 992px) {
-    .FirstColumn {
-        flex: 0 0 100%;
-        order: 1;
-    }
+  .FirstColumn {
+    flex: 0 0 100%;
+    order: 1;
+  }
 
-    .MainFooter .Column {
-        flex: 0 0 44%;
-    }
+  .MainFooter .Column {
+    flex: 0 0 44%;
+  }
 
-    .MainFooter .Column:nth-child(2) {
-        order: 2;
-    }
+  .MainFooter .Column:nth-child(2) {
+    order: 2;
+  }
 
-    .MainFooter .Column:nth-child(5) {
-        order: 3;
-    }
+  .MainFooter .Column:nth-child(5) {
+    order: 3;
+  }
 
-    .MainFooter .Column:nth-child(3) {
-        order: 4;
-    }
+  .MainFooter .Column:nth-child(3) {
+    order: 4;
+  }
 
-    .MainFooter .Column:nth-child(4) {
-        order: 5;
-    }
+  .MainFooter .Column:nth-child(4) {
+    order: 5;
+  }
 }

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { FiArrowRight } from "react-icons/fi";
+import { GoArrowRight } from "react-icons/go";
 import "./TopBar.css";
 
 export default function TopBar() {
@@ -32,7 +32,7 @@ export default function TopBar() {
       <div className="TopBar SharedBorder">
         <img src={icon1Src} className="TopBarIcon1" alt="Icon1" />
         <img
-          src="Icons/AbstractDesign2.png"
+          src="Icons/AbstractDesign2.svg"
           className="TopBarIcon2"
           alt="Icon2"
         />
@@ -40,12 +40,12 @@ export default function TopBar() {
         <div className="TopBarMid">
           <div className="TopBarTxt SharedFont">
             <p>Admission is Open, Grab your seat now</p>
-            <FiArrowRight className="ArrowIcon" />
+            <GoArrowRight className="ArrowIcon" />
           </div>
         </div>
 
         <img
-          src="Icons/AbstractDesign3.png"
+          src="Icons/AbstractDesign3.svg"
           className="TopBarIcon3"
           alt="Icon3"
         />

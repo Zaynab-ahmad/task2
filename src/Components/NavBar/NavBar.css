@@ -1,124 +1,126 @@
 .Navbar {
-    display: flex;
-    justify-content: space-between;
-    background-color: white;
-    position: relative;
-    margin-bottom: 80px;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  position: relative;
+  margin-bottom: 80px;
 }
 
 .LogoSection {
-    display: flex;
-    overflow: hidden;
-    align-items: center;
-    background-color: var(--primary-color-orange65);
-    border-right: 2px solid var(--primary-color-gray15);
-    padding: 20px 24px;
-
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  background-color: var(--primary-color-orange65);
+  border-right: 2px solid var(--primary-color-gray15);
+  padding: 20px 24px;
 }
 .Logo {
-    width: 182.6933px;
+  width: 182.6933px;
 }
 
 .NavLinks {
+  display: flex;
+
+  .NavItems {
     display: flex;
-
-    .NavItem {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 20px 34px;
-        border-left: 2px solid var(--primary-color-gray15);
-        transition: background 0.3s;
-    }
-
-    a {
-        text-decoration: none;
-        color: var(--primary-color-gray15);
-    }
+    align-items: center;
+    justify-content: center;
+    padding: 20px 34px;
+    border-left: 2px solid var(--primary-color-gray15);
+    transition: background 0.3s;
+  }
 }
 
 .NavLinks .Active {
-    background-color: var(--primary-color-orange95);
+  background-color: var(--primary-color-orange95);
 }
 
-.NavItem:hover {
-    background-color: var(--primary-color-orange75);
+.NavItems:hover {
+  background-color: var(--primary-color-orange75);
 }
 
 .BarsIcon {
-    border-left: 2px solid var(--primary-color-gray15);
-    padding: 16px 30px;
-    background-color: var(--primary-color-orange95);
-    display: none;
-    cursor: pointer;
+  border-left: 2px solid var(--primary-color-gray15);
+  padding: 16px 30px;
+  background-color: var(--primary-color-orange95);
+  display: none;
+  cursor: pointer;
+}
+.BarsIcon:hover {
+  background-color: var(--primary-color-orange65);
+  cursor: pointer;
 }
 
 .BarsIcon img {
-    width: 28px;
-    height: 28px;
+  width: 28px;
+  height: 28px;
 }
 
 @media (max-width: 1440px) {
-    .Navbar {
-        margin-bottom: 60px;
-    }
+  .Navbar {
+    margin-bottom: 60px;
+    border-radius: 8px;
+  }
 
-    .LogoSection {
-        padding: 16px 20px;
+  .LogoSection {
+    padding: 16px 20px;
+  }
+  .NavLinks {
+    display: flex;
 
+    .NavItems {
+      padding: 16px 30px;
     }
-    
-    .NavItem {
-        padding: 16px 30px;
-    }
-    .Logo {
-        width: 155.2893px;
-    }
+  }
+
+  .Logo {
+    width: 155.2893px;
+  }
 }
 
 @media (max-width: 1200px) {
-    .Navbar {
-        overflow: visible;
-    }
+  .Navbar {
+    overflow: visible;
+  }
 
-    .NavItem {
-        border: none !important;
-    }
+  .NavItems {
+    border: none !important;
+  }
 
-    .NavLinks {
-        display: none;
-        position: absolute;
-        top: 70px;
-        right: 0;
-        width: 70%;
-        flex-direction: column;
-        background: #fde6d3;
-        outline: 2px solid var(--primary-color-gray15);
-        border-radius: 8px;
-        z-index: 999;
-    }
+  .NavLinks {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 70%;
+    flex-direction: column;
+    background: #fde6d3;
+    outline: 2px solid var(--primary-color-gray15);
+    border-radius: 8px;
+    z-index: 999;
+  }
 
-    .NavLinks.Open {
-        display: flex;
-    }
+  .NavLinks.Open {
+    display: flex;
+  }
 
-    .BarsIcon {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+  .BarsIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 576px) {
-    .Navbar {
-        margin-bottom: 50px;
-    }
+  .Navbar {
+    margin-bottom: 50px;
+  }
 
-    .Logo {
-        width: 137.01998901367188;
-    }
+  .Logo {
+    width: 137.01998901367188;
+  }
 
-    .NavItem {
-        padding: 16px 30px;
-    }
+  .NavItems {
+    padding: 16px 30px;
+  }
 }

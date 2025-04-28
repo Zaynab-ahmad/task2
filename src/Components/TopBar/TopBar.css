@@ -48,7 +48,7 @@
   .TopBarIcon2 {
     position: absolute;
     top: 0;
-    left: 25%;
+    left: 30%;
     width: 72.3472px;
     z-index: 10;
   }
@@ -56,7 +56,7 @@
   .TopBarIcon3 {
     position: absolute;
     bottom: 0;
-    right: 32%;
+    right: 31%;
     width: 39.5555px;
     z-index: 10;
   }
@@ -90,7 +90,7 @@
     .TopBarIcon2 {
       width: 50.3660px;
       top: -10px;
-      left: 25%;
+      left: 23%;
     }
 
     .TopBarIcon3 {

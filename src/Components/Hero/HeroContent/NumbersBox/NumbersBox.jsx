@@ -1,6 +1,6 @@
-import './NumbersBox.css'
+import "./NumbersBox.css";
 
-export default function NumbersBox({num, text}) {
+export default function NumbersBox({ num, text }) {
   return (
     <div className="NumbersBox Flex">
       <h2 className="Numbers">+{num}</h2>

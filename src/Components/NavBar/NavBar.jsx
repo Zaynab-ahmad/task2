@@ -20,7 +20,7 @@ export default function NavBar({ logoSrc, navLinks }) {
           {navLinks.map((link, index) => (
             <div
               key={index}
-              className={`NavItem ${link.active ? "Active" : ""}`}
+              className={`NavItems ${link.active ? "Active" : ""}`}
             >
               <a href={link.href} className="SharedFont">
                 {link.label}

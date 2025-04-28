@@ -1,9 +1,11 @@
 .Hero {
-    display: flex;
+  display: flex;
+  gap: 60px;
 }
-@media (max-width:992px) {
-.Hero {
-        flex-direction: column;
-        align-items: center;
-        gap: 40px;
-    }}
+@media (max-width: 992px) {
+  .Hero {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+}

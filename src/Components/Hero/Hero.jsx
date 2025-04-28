@@ -17,7 +17,7 @@ export default function Hero() {
         <HeroContent
           smallHeading="Welcome to Little Learners Academy"
           mainHeading="Where Young Minds Blossom and"
-          highlightedText="Dreams Take Flight"
+          highlightedText="Dreams Take Flight."
           paragraph="Our kindergarten school provides a nurturing and stimulating environment, fostering a love for learning that lasts a lifetime. Join us as we embark on an exciting educational journey together!"
           numbersData={numbersInfo}
         />{" "}
