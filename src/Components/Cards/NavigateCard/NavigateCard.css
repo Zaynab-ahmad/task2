@@ -1,0 +1,67 @@
+.NavigateCard {
+  background-color: white;
+  padding: 80px;
+  align-items: center;
+  text-align: center;
+  gap: 80px;
+}
+
+.NavCardContent {
+  gap: 50px;
+}
+
+.NavigateCardHead {
+  font-family: Raleway;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 130%;
+}
+
+.NavigateCardSep {
+  width: 100%;
+}
+
+.NavigateCardBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: var(--primary-color-orange90);
+  padding: 18px;
+  gap: 10px;
+  width: 100%;
+}
+
+@media (max-width: 1440px) {
+  .NavigateCard {
+    padding: 60px;
+    gap: 60px;
+  }
+
+  .NavCardContent {
+    gap: 40px;
+  }
+
+  .NavigateCardHead {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 576px) {
+  .NavigateCard {
+    padding: 40px;
+    gap: 40px;
+  }
+
+  .NavCardContent {
+    gap: 30px;
+  }
+
+  .NavigateCardHead {
+    font-size: 28px;
+  }
+
+  .NavigateCardBtn {
+    padding: 16px;
+  }
+}

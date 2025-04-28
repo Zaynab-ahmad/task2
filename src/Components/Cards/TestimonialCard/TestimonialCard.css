@@ -1,0 +1,43 @@
+.TestimonialCard {
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    padding: 50px;
+}
+
+.Profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px !important;
+    height: 80px;
+    border: 2px solid var(--primary-color-gray15);
+    border-radius: 50%;
+    width: 100%;
+}
+
+.Rating {
+    width: 140px;
+}
+
+@media(max-width: 1440px) {
+    .TestimonialCard {
+        gap: 24px;
+        padding: 40px;
+    }
+
+    .Profile {
+        width: 66px !important;
+        height: 66px;
+    }
+
+    .Rating {
+        width: 116px;
+    }
+}
+@media(max-width: 576px) {
+    .TestimonialCard {
+        gap: 20px;
+        padding: 30px;
+    }
+}

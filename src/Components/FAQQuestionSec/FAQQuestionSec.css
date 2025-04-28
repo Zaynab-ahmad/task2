@@ -1,0 +1,21 @@
+.FAQContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+@media (max-width: 992px) {
+    .FAQContainer {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+}
+
+.FAQColumn {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}

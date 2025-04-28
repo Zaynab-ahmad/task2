@@ -1,0 +1,54 @@
+.HeroImage {
+        position: relative;
+    width: 50%;
+    margin-right: 60px;
+    
+}
+
+.MainHeroImage {
+    width: 100%;
+    z-index: 0;
+}
+
+.Bubbles {
+    width: 65%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    animation: spin 20s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+}
+
+@media(max-width: 1440px) {
+    .HeroImage {
+        margin-right: 50px;
+    }
+  
+}
+@media(max-width: 1200px) {
+  
+        .Bubbles { 
+            top: 40%;
+        }   
+}
+
+@media(max-width: 992px) {
+    .HeroImage {
+        width: 100%;
+        margin-right: 0;
+    }
+          .Bubbles {
+              top: 50%;
+          }
+}

@@ -1,0 +1,44 @@
+.MainFooter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.FirstColumn {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.Column {
+    flex: 1;
+    gap: 10px;
+
+}
+
+.ContactBoxC {
+    align-items: center;
+    gap: 10px;
+}
+.Contactgroup {
+    gap: 24px;
+}
+.LogoSec {
+    gap:20px
+}
+@media (max-width: 992px) {
+    .FirstColumn {
+        flex: 0 0 100%;
+    }
+.SiteCols {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 448px;
+    gap:50px;
+    justify-content: start;
+    border-bottom: 1px solid var(--primary-color-gray15);
+    padding-bottom: 30px;
+}}
+    

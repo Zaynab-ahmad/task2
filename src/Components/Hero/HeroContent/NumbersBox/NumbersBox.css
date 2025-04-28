@@ -1,0 +1,54 @@
+.NumbersBox {
+    align-items: start;
+    justify-content: center;
+    margin-right: 10px;
+    gap: 13px;
+
+    .Numbers {
+        font-size: 44px;
+        font-weight: 800;
+        padding: 10px 0;
+    }
+
+    .NumbersTxt {
+        font-size: 18px;
+    }
+
+}
+
+@media (max-width: 1440px) {
+    .NumbersBox {
+        gap: 10px;
+
+        .Numbers {
+            font-size: 34px;
+        }
+
+        .NumbersTxt {
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .NumbersBox {
+        text-align: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .NumbersBox:not(:last-child) {
+        border-bottom: 2px solid var(--primary-color-gray15);
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+
+
+    .Numbers {
+        font-size: 34px;
+    }
+
+    .NumbersTxt {
+        font-size: 16px;
+    }
+}

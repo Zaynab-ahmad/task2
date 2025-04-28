@@ -1,0 +1,9 @@
+.Footer {
+    margin-bottom: 50px;
+    padding: 100px 113px 40px 113px;
+    gap: 50px;
+    background-color: white;
+}
+.FooterLinks {
+    justify-content: space-between;
+}

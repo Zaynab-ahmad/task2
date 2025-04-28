@@ -1,0 +1,102 @@
+
+.CardSliderWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 108px 0 108px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.CardSlider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.CardSliderTrack {
+    display: flex;
+    margin: 0 auto;
+    transition: transform 0.5s ease;
+    gap: 50px;
+    padding: 10px;
+}
+
+.CardSliderTrack>* {
+    flex: 0 0 calc((100% - 120px) / 3);
+    max-width: calc((100% - 120px) / 3);
+}
+
+.ArrowWrapper {
+    display: none;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 20px;
+}
+.Arrow {
+    border: none;
+    border-radius: 8px;
+    width: 58px;
+    height: 58px;
+    padding: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: white;
+    transition: background-color 0.3s ease;
+    z-index: 2;
+    flex-shrink: 0; 
+}
+.Prev {
+    position: absolute;
+     top:50%; 
+     left: 31px;
+      transform: translate(-50%,-50%);
+    }
+.Next {
+    position: absolute;
+     top:50%; 
+     right: -26px;
+      transform: translate(-50%,-50%);
+    }
+
+@media (max-width: 1440px) {
+    .CardSliderTrack {
+        gap: 40px;
+    }
+    .CardSliderTrack>* {
+        flex: 0 0 calc((100% - 100px) / 3);
+        max-width: calc((100% - 100px) / 3);
+    }
+
+}
+@media (max-width: 1200px) {
+
+    .CardSliderTrack>* {
+        flex: 0 0 calc((100% - 40px) / 2);
+        max-width: calc((100% - 40px) / 2);
+    }
+
+}
+
+@media (max-width: 992px) {
+    .CardSliderWrapper {  
+            padding: 10px;
+        }
+    .ArrowWrapper {
+        display: flex;
+    }
+    .OuterArrow {
+        display: none;
+    }
+    .CardSliderTrack>* {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .CardSliderTrack {
+        gap: 20px;
+    }
+}

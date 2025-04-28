@@ -1,0 +1,12 @@
+.BenefitsCardsSec {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px 40px;
+}
+@media(max-width: 1440px) {
+    .BenefitsCardsSec {   gap: 80px 40px;}
+}
+@media(max-width: 576px) {
+    .BenefitsCardsSec {   gap:68px;}
+}

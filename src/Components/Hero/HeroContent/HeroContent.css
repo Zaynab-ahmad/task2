@@ -1,0 +1,117 @@
+.HeroContent {
+    justify-content: center;
+    width: 50%;
+
+    .Content {
+        margin-bottom: 60px;
+        gap: 30px;
+    }
+
+    .HeroHerder {
+        font-size: 22px;
+        font-weight: 500;
+        padding: 8px 0;
+        margin: 10px;
+        position: relative;
+    }
+
+    .HeroHerder::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 47%;
+        height: 2px;
+        background-color: black;
+    }
+
+    .HeroMainHerder {
+        font-family: Raleway;
+        font-size: 54px;
+        font-weight: 800;
+        line-height: 130%;
+
+        span {
+            color: var(--primary-color-orange65);
+        }
+    }
+
+    .HeroText {
+        color: var(--primary-color-gray20);
+    }
+
+    .HeroBox {
+        display: flex;
+        padding: 24px 50px;
+        justify-content: space-around;
+        background-color: var(--primary-color-orange95);
+        box-shadow: 8px 8px 0px 1px rgba(255, 190, 153, 1);
+    }
+
+
+}
+
+@media (max-width:1440px) {
+    .HeroContent {
+        .Content {
+            margin-bottom: 50px;
+            gap: 20px;
+        }
+
+        .HeroHerder {
+            font-size: 18px;
+        }
+
+        .HeroHerder::after {
+
+            width: 50%;
+
+        }
+
+        .HeroMainHerder {
+            font-size: 40px;
+        }
+
+        .HeroBox {
+            padding: 20px 40px;
+            box-shadow: 6px 6px 0px 1px rgba(255, 190, 153, 1);
+        }
+    }
+
+}
+
+@media (max-width:992px) {
+    .HeroContent {
+        width: 100%;
+
+        .Content {
+            text-align: center;
+            align-items: center;
+            margin-bottom: 40px;
+            gap: 18px;
+        }
+
+        .HeroHerder {
+            font-size: 16px;
+        }
+
+        .HeroMainHerder {
+            font-size: 30px;
+        }
+
+        .HeroBox {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            padding: 40px;
+            box-shadow: 4px 4px 0px 1px rgba(255, 190, 153, 1);
+        }
+
+        .HeroHerder::after {
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+
+        }
+    }
+}

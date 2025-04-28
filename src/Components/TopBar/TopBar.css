@@ -1,0 +1,142 @@
+.TopBar {
+  border-radius: 8px;
+  margin-top: 18px;
+  margin-bottom: 14px;
+  background: linear-gradient(90deg, #ffdecc, #fde6d3);
+  display: flex;
+  position: relative;
+  overflow: hidden;
+
+  .TopBarMid {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+
+    .TopBarTxt {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 14px 0;
+    
+      .ArrowIcon {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+
+  .TopBarIcon1,
+  .TopBarIcon4 {
+    width: 224px;
+    background-size: cover;
+    position: absolute;
+    z-index: 0;
+  }
+
+  .TopBarIcon1 {
+    background-image: url("Icons/AbstractDesign.png");
+    left: 0;
+  }
+
+  .TopBarIcon4 {
+    background-image: url("Icons/AbstractDesign4.png");
+    right: 0;
+  }
+
+  .TopBarIcon2 {
+    position: absolute;
+    top: 0;
+    left: 25%;
+    width: 72.3472px;
+    z-index: 10;
+  }
+
+  .TopBarIcon3 {
+    position: absolute;
+    bottom: 0;
+    right: 32%;
+    width: 39.5555px;
+    z-index: 10;
+  }
+}
+
+@media (max-width: 1440px) {
+  .TopBar {
+    border-radius: 6px;
+    margin-top: 16px;
+
+    .TopBarTxt {
+      padding: 12px 0;
+    }
+
+    .ArrowIcon {
+      width: 24px !important;
+      height: 24px !important;
+
+    }
+
+    .TopBarIcon1 {
+      background-image: url("Icons/AbstractDesign7.png");
+      width: 180px;
+    }
+
+    .TopBarIcon4 {
+      background-image: url("Icons/AbstractDesign8.png");
+      width: 180px;
+    }
+
+    .TopBarIcon2 {
+      width: 50.3660px;
+      top: -10px;
+      left: 25%;
+    }
+
+    .TopBarIcon3 {
+      width: 32.5616px;
+      bottom: -8px;
+      right: 25%;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .TopBar {
+    margin-top: 40px;
+    text-align: center;
+
+    .TopBarTxt {
+      font-size: 14px !important;
+      gap: 10px;
+    }
+
+    .ArrowIcon {
+      width: 20px !important;
+      height: 20px !important;
+
+    }
+
+    .TopBarIcon1 {
+      background-image: url("Icons/AbstractDesign5.png");
+      width: 50px;
+    }
+
+    .TopBarIcon4 {
+      background-image: url("Icons/AbstractDesign6.png");
+      width: 50px;
+    }
+
+    .TopBarIcon2 {
+      width: 50.3660px;
+      top: -10px;
+      left: 0;
+    }
+
+    .TopBarIcon3 {
+      width: 32.5616px;
+      bottom: -8px;
+      right: 0;
+    }
+  }
+}

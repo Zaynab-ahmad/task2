@@ -1,0 +1,9 @@
+.Hero {
+    display: flex;
+}
+@media (max-width:992px) {
+.Hero {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }}

@@ -1,0 +1,45 @@
+.HeaderSecContent {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 19px;
+
+  h2 {
+    font-family: Raleway;
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 130%;
+  }
+
+  p {
+    width: 72%;
+  }
+}
+
+@media (max-width: 1440px) {
+  .HeaderSecContent {
+    gap: 14px;
+
+    h2 {
+      font-size: 48px;
+    }
+
+    .HeaderSecContent p {
+      width: 75%;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .HeaderSecContent {
+    gap: 10px;
+
+    h2 {
+      font-size: 37px;
+    }
+    p {
+      width: 90%;
+      text-align: center;
+    }
+  }
+}

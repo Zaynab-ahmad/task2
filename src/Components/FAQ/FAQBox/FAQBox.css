@@ -1,0 +1,110 @@
+.FAQBox {
+  display: flex;
+  align-items: center;
+  padding: 34px 40px;
+  gap: 30px;
+  background-color: var(--primary-color-orange95);
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.FAQBox.Open {
+  background-color: #ffffff;
+  padding: 40px;
+}
+
+.FAQBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-color-orange97);
+  border-radius: 6px;
+  padding: 8px;
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.FAQBtn:hover {
+  background-color: var(--primary-color-orange95);
+}
+
+.Qustion {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.TopRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap:20px;
+  width: 100%;
+}
+.Open .TopRow {
+  padding: 24px 0 24px 0;
+  border-bottom: 2px solid var(--primary-color-gray15);
+}
+.Answer {
+  padding-top: 24px;
+}
+@media (max-width: 1440px) {
+  .FAQBox {
+    padding: 24px 30px;
+    gap: 24px;
+  }
+  .FAQBox.Open {
+    padding: 34px 30px;
+  }
+  .FAQBtn {
+    border-radius: 4px;
+    padding: 6px;
+    font-size: 20px;
+    width: 32px;
+    height: 32px;
+  }
+
+  .Qustion {
+    font-size: 18px;
+  }
+
+  .Open .Qustion {
+    padding: 20px 0 20px 0;
+  }
+
+  .Answer {
+    padding-top: 20px;
+  }
+}
+@media (max-width: 576px) {
+  .FAQBox {
+    padding: 20px 24px;
+    gap: 24px;
+  }
+  .FAQBox.Open {
+    padding: 30px 24px;
+  }
+
+  .FAQBtn {
+    border-radius: 4px;
+    padding: 6px;
+    font-size: 20px;
+    width: 32px;
+    height: 32px;
+  }
+
+  .Qustion {
+    font-size: 18px;
+  }
+
+  .Open .Qustion {
+    padding: 20px 0 20px 0;
+  }
+
+  .Answer {
+    padding-top: 20px;
+  }
+}

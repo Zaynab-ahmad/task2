@@ -1,0 +1,24 @@
+.HeaderSecBox {
+    background-color: white;
+    color: var(--primary-color-gray20);
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    width: fit-content;
+    margin-bottom: 19px;
+}
+
+@media (max-width: 1440px) {
+    .HeaderSecBox {
+        padding: 8px 14px;
+        border-radius: 6px;
+        font-size: 16px;
+        margin-bottom: 14px;
+    }
+}
+@media (max-width: 576px) {
+    .HeaderSecBox {     
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+}
