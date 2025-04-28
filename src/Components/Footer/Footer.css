@@ -1,9 +1,78 @@
 .Footer {
-    margin-bottom: 50px;
-    padding: 100px 113px 40px 113px;
-    gap: 50px;
-    background-color: white;
+  margin-bottom: 50px;
+  padding: 100px 113px 40px 113px;
+  gap: 50px;
+  background-color: white;
 }
 .FooterLinks {
-    justify-content: space-between;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0 20px 0;
+  border-bottom: 1px solid var(--primary-color-gray15);
+}
+.PR {
+  padding-right: 16px;
+}
+.PL {
+  padding-left: 16px;
+}
+.border-right {
+  border-right: 2px solid var(--primary-color-gray15);
+}
+.MediaCon {
+  gap: 14px;
+}
+.CopyRightSec {
+  padding-top: 30px;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: var(--primary-color-gray40);
+}
+@media (max-width: 1440px) {
+  .Footer {
+    margin-bottom: 40px;
+    padding: 80px 80px 40px 80px;
+    gap: 40px;
+  }
+
+  .PR {
+    padding-right: 10px;
+  }
+
+  .PL {
+    padding-left: 10px;
+  }
+
+  .CopyRightSec {
+    padding-top: 20px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 576px) {
+  .Footer {
+    margin-bottom: 20px;
+    padding: 60px 60px 60px 30px;
+    gap: 30px;
+  }
+
+  .FooterLinks {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .PR {
+    padding-right: 12px;
+  }
+
+  .PL {
+    padding-left: 12px;
+  }
+  .border-right {
+    border-right: 1px solid var(--primary-color-gray15);
+  }
+
+  .CopyRightSec {
+    padding-top: 16px;
+    font-size: 14px;
+  }
 }

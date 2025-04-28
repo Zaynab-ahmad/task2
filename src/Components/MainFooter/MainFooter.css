@@ -2,6 +2,8 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    border-bottom: 1px solid var(--primary-color-gray15);
+    padding-bottom: 50px;
 }
 
 .FirstColumn {
@@ -27,18 +29,18 @@
 .LogoSec {
     gap:20px
 }
+
 @media (max-width: 992px) {
     .FirstColumn {
         flex: 0 0 100%;
     }
-.SiteCols {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    max-height: 448px;
-    gap:50px;
-    justify-content: start;
-    border-bottom: 1px solid var(--primary-color-gray15);
-    padding-bottom: 30px;
-}}
+
+    .MainFooter .Column {
+        flex: 0 0 50%;
+    }
+
+    .MainFooter .Column:last-child {
+        flex: 0 0 100%;
+    }
+}
     

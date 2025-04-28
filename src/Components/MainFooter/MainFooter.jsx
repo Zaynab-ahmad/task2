@@ -57,9 +57,7 @@ export default function MainFooter() {
         </div>
       </div>
 
-      <div className="SiteCols">
       {linksData.map((section, index) => (
-
         <div className="Column Flex" key={index}>
           <h3>{section.title}</h3>
           {section.links.map((link, linkIndex) => (
@@ -69,7 +67,6 @@ export default function MainFooter() {
           ))}
         </div>
       ))}
-      </div>
     </div>
   );
 }

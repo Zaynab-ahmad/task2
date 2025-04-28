@@ -11,6 +11,7 @@
   background-color: #fff5f0;
   --primary-color-gray15: #262626;
   --primary-color-gray20: #333333;
+  --primary-color-gray40: #656567;
   --primary-color-orange: #fff5f0;
   --primary-color-orange90: #ffdecc;
   --primary-color-orange95: #ffefe5;
@@ -45,7 +46,7 @@
   display: flex;
   flex-direction: column;
 }
-.FlexRow{
+.FlexRow {
   display: flex;
 }
 a {
