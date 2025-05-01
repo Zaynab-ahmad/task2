@@ -1,12 +1,9 @@
+import { Routes, Route } from "react-router-dom";
 import "./App.css";
-import BenefitsSec from "./Components/BenefitsSec/BenefitsSec";
-import FAQ from "./Components/FAQ/FAQ";
 import Footer from "./Components/Footer/Footer";
-import Hero from "./Components/Hero/Hero";
 import NavBar from "./Components/NavBar/NavBar";
-import NavigateSec from "./Components/NavigateSec/NavigateSec";
-import TestimonialsSec from "./Components/TestimonialsSec/TestimonialsSec";
 import TopBar from "./Components/TopBar/TopBar";
+import Home from "./Pages/Home/Home";
 
 function App() {
   const logo = "Icons/Logo.svg";
@@ -22,11 +19,10 @@ function App() {
     <>
       <TopBar />
       <NavBar logoSrc={logo} navLinks={navLinks} />
-      <Hero />
-      <BenefitsSec />
-      <TestimonialsSec />
-      <FAQ />
-      <NavigateSec />
+          <Routes>
+  <Route path="/" element={<Home />}/>
+      
+          </Routes>
       <Footer />
     </>
   );

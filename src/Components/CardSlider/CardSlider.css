@@ -57,7 +57,7 @@
 .Next {
   position: absolute;
   top: 50%;
-  right: -26px;
+  right: -20px;
   transform: translate(-50%, -50%);
 }
 
