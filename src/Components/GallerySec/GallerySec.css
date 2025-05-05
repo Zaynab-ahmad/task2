@@ -2,6 +2,7 @@
     align-items: center;
 }
 .GalleryTapsWrapper {
+    justify-content: center;
     gap:15px;
     flex-wrap: wrap;
 }
