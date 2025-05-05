@@ -5,6 +5,7 @@ import "./TopBar.css";
 export default function TopBar() {
   const [icon1Src, setIcon1Src] = useState("Icons/AbstractDesign.png");
   const [icon4Src, setIcon4Src] = useState("Icons/AbstractDesign4.png");
+  const [hidden, setHidden] = useState(false);
 
   useEffect(() => {
     function handleResize() {
@@ -20,16 +21,25 @@ export default function TopBar() {
       }
     }
 
-    // run once on mount
+    function handleScroll() {
+      setHidden(window.scrollY > 50);
+    }
+
     handleResize();
     window.addEventListener("resize", handleResize);
+    window.addEventListener("scroll", handleScroll);
 
-    return () => window.removeEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
+
   return (
-    <div className="NavContainer">
-      <div className="TopBar SharedBorder">
+
+      <div className="TopBar SharedBorder" style={{
+        display: hidden ? "none" : "block"}}>
         <img src={icon1Src} className="TopBarIcon1" alt="Icon1" />
         <img
           src="Icons/AbstractDesign2.svg"
@@ -51,6 +61,6 @@ export default function TopBar() {
         />
         <img src={icon4Src} className="TopBarIcon4" alt="Icon4" />
       </div>
-    </div>
+  
   );
 }

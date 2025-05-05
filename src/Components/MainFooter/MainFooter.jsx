@@ -2,7 +2,7 @@ import "./MainFooter.css";
 import { IoIosMail } from "react-icons/io";
 import { FaPhone } from "react-icons/fa6";
 import { IoLocationSharp } from "react-icons/io5";
-import ContactIconBox from "../ContactIconBox/ContactIconBox";
+import ContactIconBox from "../Boxes/ContactIconBox/ContactIconBox";
 
 
 const linksData = [

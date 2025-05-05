@@ -1,4 +1,4 @@
-import MediaBox from "../MediaBox/MediaBox";
+import MediaBox from "../Boxes/MediaBox/MediaBox";
 import "./Footer.css";
 import { FaFacebook } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";

@@ -1,4 +1,4 @@
-import CardSlider from "../CardSlider/CardSlider";
+import CardSlider from "../Sliders/CardSlider/CardSlider";
 import SectionsHeader from "../SectionsHeader/SectionsHeader";
 
 export default function TestimonialsSec() {
@@ -40,6 +40,9 @@ export default function TestimonialsSec() {
         title="Their Happy Words 🤗"
         header="Our Testimonials"
         text="Our testimonials are heartfelt reflections of the nurturing environment we provide, where children flourish both academically and emotionally."
+        margin={true}
+        location="center"
+        fontSize="big"
       />
       <CardSlider data={data} />
     </div>

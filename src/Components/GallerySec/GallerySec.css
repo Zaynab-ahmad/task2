@@ -1,0 +1,16 @@
+.GallerySec {
+    align-items: center;
+}
+.GalleryTapsWrapper {
+    gap:15px;
+    flex-wrap: wrap;
+}
+.Taps {
+    background-color: white;
+    width: fit-content;
+    border: none;
+    padding: 14px 20px;
+}
+.ActiveTap {
+    background-color: var(--primary-color-orange95) !important;
+}

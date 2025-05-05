@@ -1,17 +1,24 @@
 .BenefitsCardsSec {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+    display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    
   gap: 100px 40px;
   padding-top: 50px;
 }
 @media (max-width: 1440px) {
   .BenefitsCardsSec {
+    grid-template-columns: repeat(2, 1fr);
     gap: 80px 40px;
   }
 }
-@media (max-width: 576px) {
+@media (max-width: 1200px) {
   .BenefitsCardsSec {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 992px) {
+  .BenefitsCardsSec {
+    grid-template-columns: 1fr;
     gap: 68px;
   }
 }

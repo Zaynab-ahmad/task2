@@ -1,0 +1,122 @@
+.CardsSliderLeftAR {
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.SliderWrapperAR {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.CardSliderTrackAR {
+  display: flex;
+  transition: transform 0.5s ease;
+  gap: var(--gap);
+  padding: 10px;
+}
+
+.CardSliderTrackAR > * {
+  flex: 0 0
+    calc((100% - (var(--gap) * (var(--visible-cards)))) / var(--visible-cards));
+  max-width: calc(
+    (100% - (var(--gap) * (var(--visible-cards)))) / var(--visible-cards)
+  );
+}
+
+.CardsSliderLeftBott {
+  padding: 10px;
+}
+.CardSliderH {
+  justify-content: space-between;
+  align-items: center;
+}
+.CardSliderTitle,
+.GalleryTit {
+  font-family: raleway;
+  font-weight: 700;
+  line-height: 130%;
+}
+.CardSliderTitle {
+  font-size: 22px;
+}
+.GalleryTit {
+  font-size: 40px;
+}
+.ArrowWrapperL {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+  .Arrow {
+    border: none;
+    border-radius: 8px;
+    width: 58px;
+    height: 58px;
+    padding: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: white;
+    transition: background-color 0.3s ease;
+    z-index: 2;
+    flex-shrink: 0;
+  }
+}
+@media (max-width: 1440px) {
+  .CardSliderTitle {
+    font-size: 18px;
+  }
+  .GalleryTit {
+    font-size: 34px;
+  }
+
+  .ArrowWrapperL {
+    gap: 16px;
+    .Arrow {
+      border-radius: 6px;
+      width: 48px;
+      height: 48px;
+      padding: 12px;
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .CardSliderTrackAR > * {
+    flex: 0 0
+      calc(
+        (100% - (var(--gap) * (var(--visible-cards) - 1))) /
+          var(--visible-cards)
+      );
+    max-width: calc(
+      (100% - (var(--gap) * (var(--visible-cards) - 1))) / var(--visible-cards)
+    );
+  }
+
+  .CardSliderTrackAR {
+    gap: var(--gap);
+  }
+}
+
+@media (max-width: 992px) {
+  .GalleryTit {
+    font-size: 28px;
+  }
+  .galwrap {
+    flex-direction: column;
+    flex-direction: column-reverse;
+    align-content: center;
+    gap: 20px;
+  }
+  .CardSliderTrackAR {
+    gap: 0px;
+    padding-top: 28px;
+  }
+  .CardSliderTrackAR > * {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}

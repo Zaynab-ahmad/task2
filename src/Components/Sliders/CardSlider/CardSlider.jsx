@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import TestimonialCard from "../Cards/TestimonialCard/TestimonialCard";
+import TestimonialCard from "../../Cards/TestimonialCard/TestimonialCard";
 import "./CardSlider.css";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 

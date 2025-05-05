@@ -9,6 +9,9 @@ export default function NavigateSec() {
         title="Explore More"
         header="Navigate through our Pages"
         text="Your gateway to discovering a wealth of valuable information about our kindergarten school, Feel free to explore and learn more about the enriching experiences that await your child at our kindergarten school"
+        margin={true}
+        location="center"
+        fontSize="big"
       />
       <NavigateContainer />
     </div>

@@ -1,28 +1,25 @@
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import Footer from "./Components/Footer/Footer";
-import NavBar from "./Components/NavBar/NavBar";
-import TopBar from "./Components/TopBar/TopBar";
+
 import Home from "./Pages/Home/Home";
+import Header from "./Components/Header/Header";
+import AboutUs from "./Pages/AboutUs/AboutUs";
+import Academics from "./Pages/Academics/Academics";
 
 function App() {
-  const logo = "Icons/Logo.svg";
-  const navLinks = [
-    { label: "Home", href: "#", active: true },
-    { label: "About Us", href: "#", active: false },
-    { label: "Academics", href: "#", active: false },
-    { label: "Admissions", href: "#", active: false },
-    { label: "Student Life", href: "#", active: false },
-    { label: "Contact", href: "#", active: false },
-  ];
   return (
     <>
-      <TopBar />
-      <NavBar logoSrc={logo} navLinks={navLinks} />
-          <Routes>
-  <Route path="/" element={<Home />}/>
-      
-          </Routes>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<AboutUs/>} />
+        <Route path="/academics" element={<Academics/>} />
+        <Route path="/admissions" element={<div>Admissions</div>} />
+        <Route path="/student-life" element={<div>Student Life</div>} />
+        <Route path="/contact" element={<div>Contact</div>} />
+      </Routes>
+
       <Footer />
     </>
   );

@@ -1,17 +1,20 @@
-import BenefitsCardsSec from '../BenefitsCardsSec/BenefitsCardsSec';
-import SectionsHeader from '../SectionsHeader/SectionsHeader'
-import './BenefitsSec.css'
+import BenefitsCardsSec from "../BenefitsCardsSec/BenefitsCardsSec";
+import SectionsHeader from "../SectionsHeader/SectionsHeader";
+import "./BenefitsSec.css";
 
-export default function BenefitsSec() {
+export default function BenefitsSec({ data, title, header, text }) {
   return (
     <div className="MainContainer">
       <div className="BenefitsSec Flex">
         <SectionsHeader
-          title="Children Deserve Bright Future"
-          header="Our Benefits"
-          text="With a dedicated team of experienced educators, state-of-the-art facilities, and a comprehensive curriculum, we aim to lay a strong foundation for your child's future."
+          title={title}
+          header={header}
+          text={text}
+          margin={true}
+          location="center"
+          fontSize="big"
         />
-        <BenefitsCardsSec />
+        <BenefitsCardsSec data={data} />
       </div>
     </div>
   );

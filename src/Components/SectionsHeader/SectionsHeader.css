@@ -1,17 +1,15 @@
-.SectionsHeader {
-align-items: center;
-text-align: center;
+.SectionsHeader .MarginBot {
 margin-bottom: 200px;
 }
 
 @media(max-width: 1440px) {
-.SectionsHeader  {
+.SectionsHeader .MarginBot {
         margin-bottom: 80px;
     }
 }
 
 @media(max-width: 992px) {
-.SectionsHeader  {
+.SectionsHeader .MarginBot  {
         margin-bottom: 50px;
     }
 }

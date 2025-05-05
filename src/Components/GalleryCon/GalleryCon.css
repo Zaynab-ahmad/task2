@@ -1,0 +1,73 @@
+.GalleryContainer {
+    padding-top: 295px;
+    width: 100%;
+}
+
+.GalleryCon {
+    padding: 200px 50px 50px 50px;
+    background-color: white;
+    position: relative;
+}
+
+.GallerySlider {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    padding: 0 50px;
+}
+
+.GalleryCard {
+    width: 100%;
+    aspect-ratio: 3/2;
+    flex-shrink: 0;
+}
+
+.GalleryCardImg {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.GalleryContent {
+    padding-top: 80px;
+    text-align: start;
+    color: (--primary-color-gray30);
+}
+
+@media (max-width: 1440px) {
+    .GalleryCon {
+        padding: 150px 40px 40px 40px;
+    }
+
+    .GallerySlider {
+        padding: 0 40px;
+    }
+}
+
+@media (max-width: 992px) {
+    .GalleryCon {
+        padding: 120px 30px 30px 30px;
+    }
+
+    .GallerySlider {
+        padding: 0 30px;
+    }
+
+    .GalleryContent {
+        padding-top: 244px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .GalleryCon {
+        padding: 100px 20px 20px 20px;
+    }
+
+    .GallerySlider {
+        padding: 0 20px;
+    }
+}

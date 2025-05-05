@@ -1,0 +1,14 @@
+.MCardsContainer {
+  gap: 60px;
+}
+@media (max-width: 1440px) {
+  .MCardsContainer {
+    gap: 40px;
+  }
+}
+@media (max-width: 992px) {
+  .MCardsContainer {
+    flex-direction: column;
+    gap: 30px;
+  }
+}

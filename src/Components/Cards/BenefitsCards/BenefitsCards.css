@@ -1,7 +1,8 @@
 .BenefitsCards {
   position: relative;
   padding: 80px 50px;
-  width: 31%;
+  width: 100%;
+  height: 100%;
   gap: 20px;
 
   .BenefitsCardsIcon {
@@ -9,7 +10,7 @@
     padding: 20px;
     position: absolute;
     left: 5%;
-    top: -13%;
+    top: -40px;
     font-size: 34px;
   }
 
@@ -37,11 +38,6 @@
   }
 }
 
-@media (max-width: 1200px) {
-  .BenefitsCards {
-    width: 46%;
-  }
-}
 
 @media (max-width: 992px) {
   .BenefitsCards {
@@ -51,7 +47,6 @@
 
     .BenefitsCardsIcon {
       border-radius: 6px;
-      top: -19%;
     }
 
     h3 {
@@ -59,3 +54,4 @@
     }
   }
 }
+
