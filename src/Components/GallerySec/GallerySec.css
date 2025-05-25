@@ -1,17 +1,30 @@
 .GallerySec {
     align-items: center;
 }
+
 .GalleryTapsWrapper {
-    justify-content: center;
-    gap:15px;
-    flex-wrap: wrap;
+    width: 100%;
+    padding: 5px;
+    justify-items: center;
+    gap: 15px;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+
 }
+
+.GalleryTapsWrapper::-webkit-scrollbar {
+    display: none;
+    /* Hide scrollbar in WebKit browsers (Chrome, Safari) */
+}
+
 .Taps {
     background-color: white;
     width: fit-content;
     border: none;
+    white-space: nowrap;
     padding: 14px 20px;
 }
+
 .ActiveTap {
-    background-color: var(--primary-color-orange95) !important;
-}
+    background-color: var(--primary-color-orange95) !important; }
