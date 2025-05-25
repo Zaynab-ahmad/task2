@@ -6,6 +6,7 @@
   background-color: var(--primary-color-orange95);
   transition: background-color 0.3s ease;
   width: 100%;
+  min-height: 116px;
 }
 
 .FAQBox.Open {
