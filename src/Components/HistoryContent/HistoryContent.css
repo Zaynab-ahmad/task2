@@ -3,22 +3,20 @@
   align-items: center;
   background-color: white;
   padding: 150px;
+  position: relative;
+}
+.VerticalLine {
+  position: absolute;
+  width: 2px;
+  background-color: black;
+  outline: 6px solid var(--primary-color-orange80);
+  z-index: 0;
 }
 
 .TimelineContainer {
   display: flex;
-  position: relative;
 }
 
-.VLine {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 12px;
-  object-fit: cover;
-  z-index: 1;
-}
 
 .HistoryContent {
   display: flex;
@@ -31,6 +29,7 @@
   .HistoryContentWrapper {
     padding: 100px;
   }
+
   .HistoryContent {
     gap: 80px;
   }
@@ -39,18 +38,11 @@
   .HistoryContentWrapper {
     padding: 50px 20px;
   }
+
   .HistoryContent {
     gap: 50px;
   }
-  .VLine {
-    top: -6%;
-    height: 99%;
-  }
+ 
 }
-@media (max-width: 576px) {
 
-  .VLine {
-    top: -7%;
-    height: 100%;
-  }
-}
+

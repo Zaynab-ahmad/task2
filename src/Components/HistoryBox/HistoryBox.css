@@ -1,117 +1,179 @@
-.TimelineItem {
+.HistoryBox {
   gap: 50px;
+  z-index: 0;
+}
 
-  .TimelineItemLine {
-    justify-content: start;
-    position: relative;
-  }
+.TimelineContentYear {
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 30px 50px;
+  gap: 20px;
+ max-width: 364.3px;
+  height: 148px;
+  position: relative;
+}
 
-  .HlineDiv {
-    display: flex;
-    align-items: center;
-    position: relative;
-    z-index: 100;
-    width: 95px;
-    margin: 0;
-  }
+.TimelineContentYearImg {
+ max-width: 88px;
+}
 
-  .Hline {
-    height: 20;
-    width: 100%;
-  }
+.TimelineContentYearH {
+  font-family: Raleway;
+  font-size: 68px;
+  font-weight: 700;
+  line-height: 130%;
+}
 
-  .TimelineContentYear {
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    padding: 30px 50px;
-    gap: 20px;
-    width: fit-content;
+.TimelineContent {
+  justify-content: center;
+  gap: 20px;
+}
 
-    .TimelineContentYearImg {
-      width: 88px;
-    }
+.TimelineContentH {
+  font-family: Raleway;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 130%;
+}
+.TimelineItemLine {
+  margin-left: 86px;
+}
 
-    .TimelineContentYearH {
-      font-family: Raleway;
-      font-size: 68px;
-      font-weight: 700;
-      line-height: 130%;
-    }
-  }
+.TimelineContentYear::before {
+  position: absolute;
+  content: "";
+  left: -12px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 20px;
+ width: 20px;
+  border: 2px solid var(--primary-color-gray15);
+  background-color: white;
+  border-radius: 50%;
+  z-index: 1000;
+}
 
-  .TimelineContent {
-    justify-content: center;
-    gap: 20px;
-  }
+.TimelineContentYear::after {
+  position: absolute;
+  content: "";
+  left: -95px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 20px;
+ width: 20px;
+  border: 2px solid var(--primary-color-gray15);
+  background-color: white;
+  border-radius: 50%;
+  z-index: 1000;
+}
 
-  .TimelineContentH {
-    font-family: Raleway;
-    font-size: 28px;
-    font-weight: 700;
-    line-height: 130%;
-  }
+.HLine::before {
+  position: absolute;
+  content: "";
+  left: -68px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 2px;
+ width: 49px;
+  background-color: black;
+  outline: 6px solid var(--primary-color-orange80);
+  z-index: 100;
 }
 
 @media (max-width: 1440px) {
-  .TimelineItem {
-    gap: 40px;
-
-    .TimelineContentYear {
-      padding: 24px 34px;
-
-      .TimelineContentYearImg {
-        width: 60px;
-      }
-
-      .TimelineContentYearH {
-        font-size: 48px;
-      }
+  .TimelineContentYear {
+      height: 110px;
+      max-width: 261px;
     }
+  .TimelineContentYear {
+    padding: 24px 34px;
+  }
 
-    .TimelineContent {
-      gap: 16px;
-    }
+  .TimelineContentYearImg {
+  max-width: 60px;
+  }
 
-    .TimelineContentH {
-      font-size: 24px;
-    }
+  .TimelineContentYearH {
+    font-size: 48px;
+  }
 
-    .HlineDiv {
-      width: 84px;
-    }
+  .TimelineContent {
+    gap: 16px;
+  }
+
+  .TimelineContentH {
+    font-size: 24px;
+  }
+
+  .TimelineItemLine {
+    margin-left: 76px;
+  }
+  .TimelineContentYear::before {
+    left: -12px;
+    height: 20px;
+   width: 20px;
+  }
+
+  .TimelineContentYear::after {
+    left: -84px;
+    height: 20px;
+   width: 20px;
+  }
+
+  .HLine::before {
+    left: -56px;
+   width: 38px;
   }
 }
 
 @media (max-width: 992px) {
-  .TimelineItem {
+  .HistoryBox {
     flex-direction: column;
     gap: 30px;
-    margin-left: 0;
-
+  }
     .TimelineContentYear {
-      padding: 20px 24px;
-
-      .TimelineContentYearImg {
-        width: 50px;
-      }
-
-      .TimelineContentYearH {
-        font-size: 38px;
-      }
+      height: 90px;
+      max-width: 208px;
     }
 
-    .TimelineContent {
-      gap: 12px;
-      margin-left: 40px;
-    }
+  .TimelineContentYear {
+    padding: 20px 24px;
+  }
 
-    .TimelineContentH {
-      font-size: 22px;
-    }
+  .TimelineContentYearImg {
+   max-width: 50px;
+  }
 
-    .HlineDiv {
-      width: 62px;
-    }
+  .TimelineContentYearH {
+    font-size: 38px;
+  }
+
+  .TimelineContent {
+    gap: 12px;
+    margin-left: 40px;
+  }
+
+  .TimelineContentH {
+    font-size: 22px;
+  }
+  .TimelineItemLine {
+    margin-left: 44px;
+  }
+  .TimelineContentYear::before {
+    left: -12px;
+    height: 20px;
+   width: 20px;
+  }
+
+  .TimelineContentYear::after {
+    left: -54px;
+    height: 20px;
+   width: 20px;
+  }
+
+  .HLine::before {
+    left: -34px;
+  width: 16px;
   }
 }

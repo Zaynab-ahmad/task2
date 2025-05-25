@@ -5,12 +5,12 @@ import NavBar from "../NavBar/NavBar";
 export default function Header() {
   const logo = "Icons/Logo.svg";
   const navLinks = [
-    { label: "Home", href: "/" },
-    { label: "About Us", href: "/about" },
-    { label: "Academics", href: "/academics" },
-    { label: "Admissions", href: "/admissions" },
-    { label: "Student Life", href: "/student-life" },
-    { label: "Contact", href: "/contact" },
+    { label: "Home", href: "" },
+    { label: "About Us", href: "about" },
+    { label: "Academics", href: "academics" },
+    { label: "Admissions", href: "admissions" },
+    { label: "Student Life", href: "student-life" },
+    { label: "Contact", href: "contact" },
   ];
   return (
     <div

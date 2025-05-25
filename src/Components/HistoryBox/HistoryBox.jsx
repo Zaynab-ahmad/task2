@@ -1,17 +1,18 @@
 import "./HistoryBox.css";
 
-export default function HistoryBox({ year, title, text, isLast }) {
+export default function HistoryBox({ year, title, text, yearRef }) {
   return (
-    <div className="TimelineItem FlexRow">
+    <div className="HistoryBox FlexRow">
       <div className="TimelineItemLine FlexRow">
-        <div className="HlineDiv">
-          <img src="/Icons/line.svg" alt="" className="Hline" />
-        </div>
-        <div className="TimelineContentYear FlexRow SharedBorder SharedShadow ">
+        <div
+          ref={yearRef}
+          className="TimelineContentYear FlexRow SharedBorder SharedShadow"
+        >
+          <span className="HLine"></span>
           <img
             className="TimelineContentYearImg"
             src="/Icons/Timeline.svg"
-            alt=""
+            alt="Timeline marker"
           />
           <h3 className="TimelineContentYearH">{year}</h3>
         </div>

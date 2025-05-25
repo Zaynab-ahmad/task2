@@ -6,7 +6,7 @@ import './History.css'
 export default function History() {
     
   return (
-    <div className="MainContainer">
+    <div className="MainContainer History Flex">
       <SectionsHeader
         title="Our Progressive Journey"
         header="Our History"
@@ -15,7 +15,7 @@ export default function History() {
         location="center"
         fontSize="big"
       />
-      <HistoryContent/>
+      <HistoryContent />
     </div>
   );
 }
