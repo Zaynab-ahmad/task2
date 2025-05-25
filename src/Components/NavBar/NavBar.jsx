@@ -8,11 +8,11 @@ export default function NavBar({ logoSrc, navLinks }) {
   const location = useLocation();
   const navRef = useRef(null);
 
+
   const handleMenuToggle = () => {
     setMenuOpen((prev) => !prev);
   };
 
-  // إغلاق القائمة عند النقر خارجها
   useEffect(() => {
     const handleClickOutside = (e) => {
       if (navRef.current && !navRef.current.contains(e.target)) {
@@ -25,25 +25,21 @@ export default function NavBar({ logoSrc, navLinks }) {
     };
   }, []);
 
-  // إغلاق القائمة عند تغيير المسار
-  useEffect(() => {
-    console.log("NavBar re-rendered, pathname:", location.pathname);
-    setMenuOpen(false);
-  }, [location.pathname]);
-
   return (
     <nav className="Navbar SharedBorder" ref={navRef}>
       <div className="LogoSection">
         <img src={logoSrc} alt="Logo" className="Logo" />
       </div>
-      <ul
-        className={`NavLinks ${menuOpen ? "Open" : ""}`}
-        key={location.pathname}
-      >
+
+      <ul className={`NavLinks ${menuOpen ? "Open" : ""}`}>
         {navLinks.map((link, index) => {
           const isActive = location.pathname === link.href;
           return (
-            <li key={index} className={`NavItems ${isActive ? "Active" : ""}`}>
+            <li
+              key={index}
+              className={`NavItems ${isActive ? "Active" : ""}`}
+              onClick={() => setMenuOpen(false)} 
+            >
               <Link to={link.href} className="SharedFont">
                 {link.label}
               </Link>
@@ -51,9 +47,10 @@ export default function NavBar({ logoSrc, navLinks }) {
           );
         })}
       </ul>
+
       <div className="BarsIcon" onClick={handleMenuToggle}>
         <HiMiniBars3BottomRight size={28} />
       </div>
     </nav>
   );
-}
+} 
